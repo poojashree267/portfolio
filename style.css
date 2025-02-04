@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #f0f2f5, #ffffff);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #2c3e50, #34495e);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2.2em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* About Section */
+#about {
+  background: #ffffff;
+}
+
+#about p {
+  font-size: 1.1em;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Skills Section */
+#skills {
+  background: #f7f9fc;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.skills-list li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #444;
+}
+
+/* Projects Section */
+#projects {
+  background: #fff;
+}
+
+#projects .project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#projects .project {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#projects .project h3 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+/* Experience Section */
+#experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+#experience ul li {
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#experience ul li h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+#experience ul li p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Certificates Section */
+#certificates ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding: 0;
+}
+
+#certificates ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+#certificates ul li strong {
+  color: #007bff;
+}
+
+/* Learning Journey Section */
+#learning-journey p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+#learning-journey p strong {
+  color: #007bff;
+}
+
+/* Goals Section */
+#goals {
+  background: #ecf0f1;
+}
+
+#goals p {
+  font-size: 1.1em;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+}
+
+form button {
+  background: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #f39c12;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-list {
+    padding-left: 20px;
+  }
+}
